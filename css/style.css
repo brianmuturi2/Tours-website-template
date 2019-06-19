@@ -42,11 +42,13 @@ Dark green: #28b485
      top: 40%;
      left: 50%;
      transform: translate(-50%, -50%);
+     text-align: center;
  }
 
  .heading-primary{
     color: #fff;
     text-transform: uppercase;
+    margin-bottom: 60px;
 
     backface-visibility: hidden; /*stabilizes animation*/
  }
@@ -99,4 +101,69 @@ Dark green: #28b485
         opacity: 1;
         transform: translate(0);
      }
+ }
+
+ @keyframes moveInDown {
+    0% {
+       opacity: 0;
+       transform: translateY(100px);
+    }
+
+    100%{
+       opacity: 1;
+       transform: translate(0);
+    }
+}
+
+ .btn:link,
+ .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+ }
+
+ .btn:hover {
+    transform: translateY(-3px) ;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+ }
+
+ .btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+ }
+
+ .btn-white {
+     background-color: #fff;
+     color: #777;
+ }
+
+ .btn::after {              /* treated like child of btn element */
+     content: "";           /* content ensures it appears */
+     display: inline-block; /* content ensures it appears */
+     height: 100%;          /* 100% of the btn height % */
+     width: 100%;           /* 100% of the btn width % */
+     border-radius: 100px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+     transition: all .4s;
+ }
+
+ .btn-white::after {
+     background-color: #fff;
+ }
+
+ .btn:hover::after {
+     transform: scaleX(1.25) scaleY(1.6);
+     opacity: 0;
+ }
+
+ .btn-header {
+     animation: moveInDown .7s ease-out .75s;
+     animation-fill-mode: backwards; /* Applies 0% styles before animation starts */
  }

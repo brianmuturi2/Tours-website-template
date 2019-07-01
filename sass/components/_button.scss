@@ -35,6 +35,15 @@
         }
     }
 
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+
+        &::after {
+            background-color: $color-primary;
+        }
+    }    
+
     &::after {              /* treated like child of btn element */
         content: "";           /* content ensures it appears */
         display: inline-block; /* content ensures it appears */

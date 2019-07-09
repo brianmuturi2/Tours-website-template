@@ -8,20 +8,27 @@
 
 html {
     font-size: 62.5%;   // Defines what one rem is (10px) 
-
-   @include respond(tab-port) {
-    font-size: 50%;     // 50% of root font size i.e 50 % of 16px = 8px
-   }
-   
+    
+    @include respond(big-screen) {
+        font-size: 75%;     // 75% of root font size i.e 75 % of 16px = 12px
+       } 
+    
    @include respond(tab-land) {
     font-size: 56.25%;  // 56.25% of root font size i.e 56.25% of 16px = 9px
    }
-   
-   @include respond(big-screen) {
-    font-size: 75%;     // 75% of 16px = 12px
+    
+   @include respond(tab-port) {
+    font-size: 50%;     // 50% of root font size i.e 50 % of 16px = 8px
    }   
+   
 }
 
 body {
     box-sizing: border-box; /* border and padding are not included in width of an element */
+
+    padding: 3rem;
+
+    @include respond(tab-port) {
+        padding: 0;
+    } 
 }

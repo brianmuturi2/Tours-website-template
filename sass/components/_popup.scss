@@ -28,6 +28,11 @@
     &__left {
         width: 33.33333%;
         display: table-cell;
+
+        @include respond(tab-land) {
+            width: 0;
+            height: 33.3333%;
+        }
     }
 
     &__right {
@@ -35,11 +40,21 @@
         display: table-cell;
         vertical-align: middle;
         padding: 3rem 5rem;
+
+        @include respond(tab-land) {
+            width: 0;
+            height: 66.6666%;
+        }
     }
 
     &__img {
         display: block;
         width: 100%;
+
+        @include respond(tab-land) {
+            display: none;
+            width: 50%;
+        }
     }
 
     &__text {

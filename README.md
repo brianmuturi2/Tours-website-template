@@ -26,10 +26,10 @@
     <img src="dist/img/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Recipe searching website</h3>
+<h3 align="center">Tours website</h3>
 
   <p align="center">
-    A website for searching recipes based on a given meal/ food.
+    A website showcasing tours packages.
     <br />
     <!--
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
@@ -76,7 +76,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-A website for searching recipes based on a given meal/ food.
+A website showcasing tours packages.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

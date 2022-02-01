@@ -22,8 +22,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/brianmuturi2/Recipe-web-app">
-    <img src="dist/img/favicon.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/brianmuturi2/Tours-website-template">
+    <img src="img/favicon.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Tours website</h3>
@@ -108,7 +108,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/brianmuturi2/Recipe-web-app.git
+   git clone https://github.com/brianmuturi2/Tours-website-template.git
    ```
 2. Install NPM packages
    ```sh
@@ -126,11 +126,12 @@ This is an example of how to list things you need to use the software and how to
 
 The following are the features implemented in the application.
 
-* Querying a recipe endpoint
-* Listing all recipes
-* Viewing a specific recipe
-* Add and remove ingredients from a shopping list
-* Webpack module bundler
+* Sass variables, imports & mixins
+* Media queries
+* Scss
+* CSS animations
+* A cutom columns layout
+* Sprite svg image
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
